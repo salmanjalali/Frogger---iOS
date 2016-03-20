@@ -39,37 +39,26 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zf3-sy-Jei">
                                 <rect key="frame" x="51" y="301" width="33" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GREEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFk-iX-YN4">
                                 <rect key="frame" x="127" y="301" width="55" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eab-xL-vuQ">
                                 <rect key="frame" x="225" y="301" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyI-8a-LWh">
-                                <rect key="frame" x="112" y="441" width="84" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="107" y="344" width="84" height="30"/>
                                 <state key="normal" title="Send Preset"/>
                                 <connections>
                                     <action selector="sendPreset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYF-tX-PKD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjN-cI-Hd3">
-                                <rect key="frame" x="75" y="487" width="159" height="30"/>
-                                <color key="backgroundColor" red="0.48508505200000002" green="0.56635391690000003" blue="0.84857657070000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="View yourself on a map">
-                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Ymg-pj-Ugx" kind="show" id="ezz-y6-D0w"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="256" translatesAutoresizingMaskIntoConstraints="NO" id="lQj-pG-Cln" userLabel="Brightness">
@@ -79,24 +68,36 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSM-ZQ-Ai5">
-                                <rect key="frame" x="37" y="393" width="68" height="30"/>
+                                <rect key="frame" x="33" y="251" width="68" height="30"/>
                                 <color key="backgroundColor" red="0.99952298402786255" green="0.045464187860488892" blue="0.0051117506809532642" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="redColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TDu-cT-Ban"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLO-WV-cwc">
-                                <rect key="frame" x="113" y="393" width="74" height="30"/>
+                                <rect key="frame" x="112" y="251" width="74" height="30"/>
                                 <color key="backgroundColor" red="0.24028345942497253" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="greenColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUJ-SB-x0A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sza-Xp-YfN">
-                                <rect key="frame" x="195" y="393" width="74" height="30"/>
+                                <rect key="frame" x="194" y="251" width="74" height="30"/>
                                 <color key="backgroundColor" red="0.98819977045059204" green="0.86506575345993042" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="yellowColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dxc-la-Avm"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(888) 888-8888" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O1j-HF-t3w">
+                                <rect key="frame" x="36" y="417" width="227" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKr-td-oNO">
+                                <rect key="frame" x="38" y="455" width="223" height="30"/>
+                                <state key="normal" title="Send a message to when nearby"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aj7-cg-YXe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,11 +118,26 @@
                             <constraint firstAttribute="trailingMargin" secondItem="lQj-pG-Cln" secondAttribute="trailing" id="ucL-OW-Z8G"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Frogger Demo" id="AaU-4p-8PV"/>
+                    <navigationItem key="navigationItem" title="Frogger Demo" id="AaU-4p-8PV">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="xK4-9T-yLB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zjN-cI-Hd3">
+                                <rect key="frame" x="20" y="7" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="View yourself on a map">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ymg-pj-Ugx" kind="show" identifier="seeLocation" id="ezz-y6-D0w"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="color1" destination="zf3-sy-Jei" id="gEy-uY-1oH"/>
                         <outlet property="color2" destination="AFk-iX-YN4" id="c4n-QG-QK2"/>
                         <outlet property="color3" destination="eab-xL-vuQ" id="Qzf-fb-azN"/>
+                        <outlet property="phone" destination="O1j-HF-t3w" id="GNF-9T-ZyR"/>
                         <outlet property="slider1" destination="Bx1-VP-dTK" id="LIA-uN-Jza"/>
                         <outlet property="slider2" destination="FV3-Ux-puu" id="3b7-fn-0fg"/>
                         <outlet property="slider3" destination="eAd-D5-xjR" id="9Nb-PY-2Wr"/>

@@ -11,10 +11,10 @@ import Mapbox
 import UIKit
 import CoreLocation
 
-class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate {
+class MapViewController: UIViewController, MGLMapViewDelegate {
     //MARK: Properties
-    var lat: Float = 0
-    var long: Float = 0
+    var lat: Float = 43.477572
+    var long: Float = -80.549226
     var name: String = "Current Location"
     var location: String = "You are currently at this location.."
     let locationManager = CLLocationManager()
@@ -29,35 +29,10 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         point.title = self.name
         point.subtitle = self.location
         
-        let locManager = CLLocationManager()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locManager.delegate = self
-            locManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locManager.startUpdatingLocation()
-        }
-        
         mapView.addAnnotation(point)
         mapView.showsUserLocation = true
         mapView.zoomLevel = 14
         print("Location: \(mapView.userLocation)")
-        
-        // Ask for Authorisation from the User.
-        self.locationManager.requestAlwaysAuthorization()
-        
-        // For use in foreground
-        self.locationManager.requestWhenInUseAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
-    }
-    
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
     
     func mapView(mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
