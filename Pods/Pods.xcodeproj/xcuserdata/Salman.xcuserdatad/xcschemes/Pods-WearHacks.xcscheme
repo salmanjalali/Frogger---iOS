@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E6674142487FA96A3F05081B'
+               BlueprintIdentifier = '9C4B09149EEB8515FD32AFCC'
                BlueprintName = 'Pods-WearHacks'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_WearHacks.framework'>
