@@ -39,6 +39,7 @@ class SetTripController: UIViewController, UITextFieldDelegate, CLLocationManage
     func findAndSetup(){
         getLatLngForZip(zipCode.text!)
         sendMessage()
+        self.performSegueWithIdentifier("backHome", sender: nil)
     }
     
     func getLatLngForZip(zipCode: String) {
